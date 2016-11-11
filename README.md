@@ -1,6 +1,7 @@
 # ember-web3
+[![npm version](https://badge.fury.io/js/ember-web3.svg)](https://badge.fury.io/js/ember-web3)
 
-This add-on is a solution for integrating Web3 into your Ember.js web app.
+This add-on is simplifies integrating Web3 into your Ember.js web app.
 For more information on Web3 visit: https://github.com/ethereum/web3.js/
 
 ## Installation
