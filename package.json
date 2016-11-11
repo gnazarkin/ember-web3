@@ -1,6 +1,6 @@
 {
   "name": "ember-web3",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "ember-web3 simplifies working with web3.js in your Ember app",
   "homepage": "https://github.com/gnazarkin/ember-web3",
   "repository": {
@@ -58,7 +58,6 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "loader.js": "^4.0.1",
-    "web3":"^0.16.0"
+    "loader.js": "^4.0.1"
   }
 }
