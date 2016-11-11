@@ -1,7 +1,12 @@
 {
   "name": "ember-web3",
-  "version": "0.0.1",
-  "description": "ember-web3 simplifies working with web3.js in your Ember app. WIP",
+  "version": "0.0.2",
+  "description": "ember-web3 simplifies working with web3.js in your Ember app",
+  "homepage": "https://github.com/gnazarkin/ember-web3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnazarkin/ember-web3.git"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,8 +20,24 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "Gleb Nazarkin",
+    "email": "gleb.nazarkin@gmail.com"
+  },
+  "ember-addon": {
+    "configPath": "tests/dummy/config"
+  },
   "license": "MIT",
+  "keywords": [
+    "ember-addon",
+    "ember-web3",
+    "web3",
+    "ethereum",
+    "blockchain"
+  ],
+  "dependencies": {
+    "ember-cli-babel": "^5.1.6"
+  },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "^2.0.1",
@@ -37,25 +58,7 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "loader.js": "^4.0.1"
-  },
-  "keywords": [
-    "ember-addon",
-    "ember-web3",
-    "web3",
-    "ethereum"
-  ],
-  "homepage": "https://github.com/gnazarkin/ember-web3",
-  "maintainers": [
-    {
-      "name": "gnazarkin",
-      "email": "gleb.nazarkin@gmail.com"
-    }
-  ],
-  "dependencies": {
-    "ember-cli-babel": "^5.1.6"
-  },
-  "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "loader.js": "^4.0.1",
+    "web3":"^0.16.0"
   }
 }
