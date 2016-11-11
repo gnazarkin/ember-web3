@@ -1,7 +1,7 @@
 {
   "name": "ember-web3",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "ember-web3 simplifies working with web3.js in your Ember app. WIP",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -37,11 +37,20 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-web3",
+    "web3",
+    "ethereum"
+  ],
+  "homepage": "https://github.com/gnazarkin/ember-web3",
+  "maintainers": [
+    {
+      "name": "gnazarkin",
+      "email": "gleb.nazarkin@gmail.com"
+    }
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6"
