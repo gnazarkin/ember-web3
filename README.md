@@ -34,11 +34,11 @@ let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 ```
 
 ### Contract Instance
-The service also allows you to simply retrieve a deplyoed contract instance of existing Solidity contract using the ABI and address. Requires the ABI array and address. Returns a promise.
+The service also allows you to simply retrieve a deployed contract instance of existing Solidity contract using the ABI and address. Requires the ABI array and address. Returns a promise.
 ```javascript
 let contractABI = ['ABI array'];
 let contractAddres = '0x6e93b795ba20f376e205d00c205eaa8cc10db9f7' // Not real a contract address
-web3.eth.contract(contractABI, contractAddress).then((contract) => {
+web3Instance.contract(contractABI, contractAddress).then((contract) => {
   // do something with contract
 });
 ```
