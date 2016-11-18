@@ -12,9 +12,11 @@ For more information on Web3 visit: https://github.com/ethereum/web3.js/
 * Define web3 provider (defaults to "http://localhost:8545") in config.
 ```javascript
 //config/environment.js
-ENV['ember-web3'] = {
-  provider: "http://localhost:8545"
-};
+  var ENV = {
+    //...
+    web3Provider: 'http://localhost:8545'
+  };
+  //...
 ```
 Inject the service where needed.
 ```javascript
@@ -32,7 +34,7 @@ let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 ```
 
 ### Contract Instance
-The service also allows you to simply retrieve a deplyoed contract instance of existing Solidity contract using the ABI and address. Requires the ABI array and address. Returns promise.
+The service also allows you to simply retrieve a deplyoed contract instance of existing Solidity contract using the ABI and address. Requires the ABI array and address. Returns a promise.
 ```javascript
 let contractABI = ['ABI array'];
 let contractAddres = '0x6e93b795ba20f376e205d00c205eaa8cc10db9f7' // Not real a contract address
