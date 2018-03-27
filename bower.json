@@ -2,9 +2,8 @@
   "name": "ember-web3",
   "dependencies": {
     "ember": "~2.8.0",
-    "ember-cli-shims": "0.1.1"
+    "ember-cli-shims": "0.1.1",
+    "web3": "^0.19.0"
   },
-  "devDependencies": {
-    "web3": "^0.16.0"
-  }
+  "devDependencies": {}
 }
