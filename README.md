@@ -16,13 +16,13 @@ web3: Ember.inject.service(),
 
 * Define web3 provider and call the `setup` method passing in the provider.
 ```javascript
-//config/environment.js
   let provider = window.web3.currentProvider;
   let web3Instance = this.get('web3').setup(provider);
 ```
 Ex. of using localhost as provider
 ```javascript
   let provider = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
+  let web3Instance = this.get('web3').setup(provider);
 ```
 ### web3 Instance
 Service injection gives access to object `Web3`, and instantiates a `web3Instance` object using the provider specified in the config.
