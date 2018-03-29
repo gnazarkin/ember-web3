@@ -6,11 +6,10 @@ export default Service.extend({
   web3Instance: null,
   contractInstance: null,
 
-  init() {
-    this._super(...arguments);
-    let provider = this.get('provider');
-    let web3 = new Web3(new Web3.providers.HttpProvider(provider));
+  setup(provider) {
+    let web3Instance = newWeb3(provider);
     this.set('web3Instance', web3);
+    return web3Instance;
   },
 
   contract(contractABI, contractAddress) {

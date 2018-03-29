@@ -9,18 +9,20 @@ For more information on Web3 visit: https://github.com/ethereum/web3.js/
 * `ember install ember-web3`
 
 ## Usage
-* Define web3 provider (defaults to "http://localhost:8545") in config.
-```javascript
-//config/environment.js
-  var ENV = {
-    //...
-    web3Provider: 'http://localhost:8545'
-  };
-  //...
-```
 Inject the service where needed.
 ```javascript
 web3: Ember.inject.service(),
+```
+
+* Define web3 provider and call the `setup` method passing in the provider.
+```javascript
+//config/environment.js
+  let provider = window.web3.currentProvider;
+  let web3Instance = this.get('web3').setup(provider);
+```
+Ex. of using localhost as provider
+```javascript
+  let provider = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
 ```
 ### web3 Instance
 Service injection gives access to object `Web3`, and instantiates a `web3Instance` object using the provider specified in the config.
