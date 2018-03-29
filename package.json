@@ -1,6 +1,6 @@
 {
   "name": "ember-web3",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "ember-web3 simplifies working with web3.js in your Ember app",
   "directories": {
     "doc": "doc",

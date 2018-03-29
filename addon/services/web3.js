@@ -7,7 +7,7 @@ export default Service.extend({
   contractInstance: null,
 
   setup(provider) {
-    let web3Instance = newWeb3(provider);
+    let web3Instance = new Web3(provider);
     this.set('web3Instance', web3);
     return web3Instance;
   },
