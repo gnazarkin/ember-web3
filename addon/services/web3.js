@@ -8,7 +8,7 @@ export default Service.extend({
 
   setup(provider) {
     let web3Instance = new Web3(provider);
-    this.set('web3Instance', web3);
+    this.set('web3Instance', web3Instance);
     return web3Instance;
   },
 
